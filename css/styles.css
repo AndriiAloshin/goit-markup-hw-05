@@ -729,6 +729,10 @@ body {
   margin-bottom: 8px;
 }
 
+.modal-field-comment {
+  margin-bottom: 16px;
+}
+
 .modal-icon {
   fill: #2e2f42;
   position: absolute;
