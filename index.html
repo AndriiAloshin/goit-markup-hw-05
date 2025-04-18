@@ -457,21 +457,22 @@
         </div>
         <div class="footer-subscribe">
           <p class="footer-subscribe-text">Subscribe</p>
-          <div class="footer-subscribe-form">
-            <input
-              type="email"
-              class="subscribe-input"
-              name="subscribe-input"
-              placeholder="E-mail"
-            />
+          <form class="footer-subscribe-form">
+            <label class="footer-subscribe-label">
+              <input
+                type="email"
+                class="subscribe-input"
+                name="subscribe-input"
+                placeholder="E-mail"
+              />
+            </label>
             <button class="subscribe-btn" type="submit">
-              Subscribe<span>
-                <svg class="subscribe-btn-icon" width="24" height="20">
-                  <use href="./images/icons.svg#icon-letter"></use>
-                </svg>
-              </span>
+              Subscribe
+              <svg class="subscribe-btn-icon" width="24" height="20">
+                <use href="./images/icons.svg#icon-letter"></use>
+              </svg>
             </button>
-          </div>
+          </form>
         </div>
       </div>
     </footer>
@@ -490,7 +491,7 @@
               <input
                 type="text"
                 class="modal-input"
-                name="name"
+                name="user-name"
                 placeholder=""
                 required
                 id="user-name"
@@ -532,30 +533,32 @@
             </div>
           </div>
           <div class="modal-field">
-            <label class="modal-label" for="user-text">Comment</label>
+            <label class="modal-label" for="user-comment">Comment</label>
             <textarea
               class="modal-comment"
               placeholder="Text input"
-              name="user-text"
-              id="user-text"
+              name="user-comment"
+              id="user-comment"
             ></textarea>
           </div>
-          <input
-            class="modal-check visually-hidden"
-            type="checkbox"
-            name="policy"
-            id="policy"
-            value="true"
-          />
-          <label class="modal-check-text" for="policy"
-            ><span class="modal-checkbox">
-              <svg class="modal-check-icon" width="10" height="8">
-                <use href="./images/icons.svg#icon-Click"></use>
-              </svg>
-            </span>
-            accept the terms and conditions of the&nbsp;
-            <a class="modal-text-link" href="">Privacy Policy</a>
-          </label>
+          <div class="modal-check-aria-frame">
+            <input
+              class="modal-check visually-hidden"
+              type="checkbox"
+              name="user-privacy"
+              id="user-privacy"
+              value="true"
+            />
+            <label class="modal-check-text" for="user-privacy"
+              ><span class="modal-checkbox">
+                <svg class="modal-check-icon" width="10" height="8">
+                  <use href="./images/icons.svg#icon-Click"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the&nbsp;
+              <a class="modal-text-link" href="">Privacy Policy</a>
+            </label>
+          </div>
           <button type="submit" class="modal-btn">Send</button>
         </form>
         <!-- <button type="submit" class="modal-btn">Send</button> -->
